@@ -1,0 +1,140 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    internal class FirstCode
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+            string textAge = "23";
+            int age = Convert.ToInt32(textAge);
+            Console.WriteLine(age);
+            
+            //The 'L' is to tell the compiler to threat the variable as Int64
+            long bigNumber2 = -90000000L;
+            string textBigNumber = "-90000000";
+            //When converting the 'L' is not need it, because the Convert.ToInt64 is makeing the variable an Int64
+            long bigNumber = Convert.ToInt64(textBigNumber);
+            Console.WriteLine(bigNumber);
+
+            //The 'D' is to tell the compiler to threat the variable as Double
+            double neg2 = -55.2D;
+            string textNegative = "55.2";
+            //When converting the 'D' is not need it, because the Convert.ToDouble is makeing the variable a Double
+            double neg = Convert.ToDouble(textNegative);
+            Console.WriteLine(neg);
+
+            //The 'F' is to tell the compiler to threat the variable as Float
+            float precision2 = 5.000001F;
+            string textPrecision = "5.000001";
+            //When converting the 'F' is not need it, because the Convert.ToSingle is makeing the variable a Single or Float
+            float precision = Convert.ToSingle(textPrecision);
+            Console.WriteLine(precision);
+
+            //The 'M' is to tell the compiler to threat the variable as Decimal
+            decimal money2 = 14.99M;
+            string textMoney = "14.99";
+            //When converting the 'M' is not need it, because the Convert.ToDecimal is makeing the variable a Decimal
+            decimal money = Convert.ToDecimal(textMoney);
+            Console.WriteLine(money);
+            
+
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MinValue);
+
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
+
+            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(float.MinValue);
+
+            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
+
+
+            //String an Char Data Types
+            string name = "Aba";
+            char letter = 'a';
+
+            Console.Write("Your name is ");
+            Console.Write(name);
+
+            Console.WriteLine();
+            Console.WriteLine(letter);
+
+
+            //Boolean Data Type
+            bool value = true;
+            bool isMale = true;
+            Console.WriteLine(isMale); //Prints True
+            isMale = false;
+            Console.WriteLine(isMale); //Prints False
+
+
+            //Operators + - * /
+            //int age = 23
+            age++;
+            age = age + 1;
+            age += 1;
+            age--;
+            age -= 1;
+            age *= 2;
+            
+            age /= 2; //Result = 2 (Incorrect)
+            //it needs to have a Data Type of Double to represent the correct value
+            double age4 = 44;
+            age4 /= 10; //Result = 4.4 (Correct)
+
+            //string name = "Aba"
+            name += " is programming!";
+            //name -= " is programming!"; would throw an Error
+
+            //char letter = 'a';
+            //letter += 'b'; would add the two unicode values together 
+
+            int i = 0;
+            Console.WriteLine(i++); //Prints 0
+            Console.WriteLine(i); //Prints 1
+            Console.WriteLine(++i); //Prints 2
+
+            //Remainder 
+            int firstNum = 10;
+            int secNum = 3;
+            Console.WriteLine(firstNum % secNum); //Result = 1
+
+
+            //Var Keyword
+            var age3 = 23; //Int32
+            var bigNumber3 = -90000000L; //Int64
+            var neg3 = -55.2D; //Double
+            var precision3 = 5.000001F; //Single
+            var money3 = 14.99M; //Decimal
+            var name2 = "Aba"; //String
+            var letter2 = 'a'; //Char
+
+
+            //Const Keyword
+            const int vat = 20;
+            //vat = 10; throws an error
+
+            int balance = 1000;
+
+            Console.WriteLine(balance * (vat/100D));
+
+            const double percentage = vat / 100D;
+            Console.WriteLine(balance * percentage);
+
+            Console.ReadLine();
+        }
+    }
+}
