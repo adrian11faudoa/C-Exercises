@@ -133,11 +133,58 @@ namespace FirstExercises
             //Console Input - Output
                 Console.Write("Enter your name: ");
                 string name3 = Console.ReadLine();
-                Console.Write("Enter your age: ");
-                string age2 = Console.ReadLine();
-                Console.Write("Your name is " + name3 + " and your age is " + age2);
 
-            Console.ReadLine();
+                Console.Write("Enter your age: ");
+                string ageInput = Console.ReadLine(); //Console.ReadLine() can't be an Int
+                int age2 = Convert.ToInt32(ageInput);
+
+                //Same as
+                int age5 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Your name is " + name3 + " and your age is " + age5);
+            
+
+            //if Statement == > >= < <= != || &&
+
+                if (age5 < 0 || age > 150) //OR
+                {
+                    Console.WriteLine("Invalid Age!");
+                }
+                else
+                    {
+                    if (age5 >= 18 && age5 <= 25) //AND
+                    {
+                        Console.WriteLine("You are between 18 and 25");
+                    }
+                    else if (age5 >= 26)
+                    {
+                        Console.WriteLine("You are 26 or Older");
+
+                    }
+                }
+
+                Console.Write("Enter the first number: ");
+                int numA = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter the second number: ");
+                int numB = Convert.ToInt32(Console.ReadLine());
+
+                int result = numA * numB;
+
+                Console.Write("Value of " + numA + " x " + numB + ": ");
+                int answer = Convert.ToInt32(Console.ReadLine());
+
+                if (result == answer)
+                {
+                    Console.WriteLine("Well Done!");
+                }
+                else
+                {
+                    Console.WriteLine("Wrong Answer!");
+                }
+
+
+                Console.ReadLine();
         }
     }
 }
