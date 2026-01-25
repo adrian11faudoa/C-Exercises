@@ -222,7 +222,67 @@
     */
 
 
-### While Loop
+### While Loop - Do While Loop
+    /*int i = 0;
+    while (i < 10)
+    { Console.WriteLine(i);
+        i++; }
+    */
+
+    Console.Write("Enter the first number: ");
+    int numA = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Enter the second number: ");
+    int numB = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+
+    int result = numA * numB;
+    int answer = 0;
+
+    Console.Write("Whats the value of " + numA + " x " + numB + "?");
+    Console.WriteLine();
+
+    while (answer != result)
+    {
+        Console.Write("Enter your answer: ");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (result != answer)
+        { 
+            Console.WriteLine("Wrong Answer!");
+            Console.WriteLine();
+        }
+
+
+    }
+    Console.WriteLine("Well Done!");
+
+    do
+    {
+        Console.Write("Enter your answer: ");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (result != answer)
+        {
+            Console.WriteLine("Wrong Answer!");
+            Console.WriteLine();
+        }
+    } while (answer != result);
+    Console.WriteLine("Well Done!");
+
+
+### Conditional Operator or Ternary Operator , Condition ? True : False
+    int age = 10;
+
+    /*
+    if (age >= 0)
+    { Console.WriteLine("Valid"); }
+    else
+    { Console.WriteLine("Invalid"); }
+    */
+
+    string result = age >= 0 ? "Valid" : "Invalid";
+    Console.WriteLine(result);
 
 
 
