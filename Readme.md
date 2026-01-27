@@ -391,10 +391,20 @@
 
     name = "Hello 'someone'"; //Result: Hello 'someone'
     Console.WriteLine(name);
-    Console.ReadLine();
+
+
+### String Formatting ({0})
+    string name = "Aba";
+    int age = 23;
+
+    Console.WriteLine("Name: " + name);
+    Console.WriteLine("Age: " + age);
+    Console.WriteLine("Name: " + name + "\nAge: " + age);
+    Console.WriteLine("Name: {0}\nAge: {1}", name, age); //Composite Formatting
+
+    Console.WriteLine("Your name is " + name + ", and your age is " + age);
+    Console.WriteLine("Your name is {0}, and your age is {1}", name, age); //Composite Formatting
 
 
 ### 
-
-
 
