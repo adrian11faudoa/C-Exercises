@@ -5,6 +5,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Threading;
 
 namespace FirstExercises
 {
@@ -12,7 +13,8 @@ namespace FirstExercises
     {
         static void Main(string[] args)
         {
-            //
+            //Exercise: Print String in Reverse
+
 
 
                 Console.ReadLine();

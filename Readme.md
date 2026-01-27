@@ -340,7 +340,7 @@
     }
 
 
-### Fizz Buzz Game
+### Exercise: Fizz Buzz Game
     bool threeDiv = false;
     bool fiveDiv = false;
 
@@ -481,17 +481,64 @@
         Console.WriteLine("Different");
 
 
-###
+### String Iteration Loop
+    string message = "C# is awesome";
+
+    /*
+    Console.WriteLine(message[0]); //Returns: C
+    Console.WriteLine(message[1]); //Returns: #
+    Console.WriteLine(message[2]); //Returns: " "
+    Console.WriteLine(message[3]); //Returns: i
+    */
+
+    for (int i = 0; i < message.Length; i++)
+    { 
+        Console.Write(message[i]);
+        // System.Threading.Thread.Sleep(1000);
+        Thread.Sleep(50); //ms
+    }
+
+    Console.WriteLine();
+    Console.WriteLine(message.Contains("C"));
+
+    bool contains = false;
+    for (int i = 0; i < message.Length; i++)
+    { 
+        if (message[i].Equals('C'))
+        {
+            contains = true;
+        }
+    }
+    Console.WriteLine(contains);
 
 
-###
+### String IsNullOrEmpty Function
+    Console.Write("Enter your name: ");
+    //string name = Console.ReadLine();
+    string name = null;
+
+    Console.WriteLine($"Your name is {name}");
+
+    //if (name != "")
+    //Console.WriteLine("0");
+
+    //if (!name.Equals(""))
+    //Console.WriteLine("1");
+
+    if (!string.IsNullOrEmpty(name)) //null ""
+    {
+        if (!name.Equals("Aba"))
+        {
+            Console.WriteLine("Correct");
+        }
+    }
 
 
-###
+### 
 
 
-###
+### 
 
 
-###
+### 
 
