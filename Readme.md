@@ -368,4 +368,33 @@
     }
 
 
+### Verbatim String Literal @
+    // \ the back slash is used for escape characters, like \t \n
+    string speech = "He said \"something\""; //Example
+
+    string path = "C:\\Users\\CoffeeNCode\\Desktop\\#C Course\nNew line test";
+    Console.WriteLine(path);
+
+    //$ String Interpolation
+    //$"Your name is {name}"
+
+    //+ to Concatenate 2 Variables
+    //"Your name is " + name
+
+    //Verbatim: @ negate all the escape characters
+    path = @"C:\Users\CoffeeNCode\Desktop\#C Course\n";
+    path = @"C:\Users\CoffeeNCode\Desktop\#C Course" + "\nNew line test";
+    Console.WriteLine(path);
+
+    string name = @"Hello ""someone"""; //Result: Hello "someone"
+    Console.WriteLine(name);
+
+    name = "Hello 'someone'"; //Result: Hello 'someone'
+    Console.WriteLine(name);
+    Console.ReadLine();
+
+
 ### 
+
+
+

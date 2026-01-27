@@ -12,10 +12,9 @@ namespace FirstExercises
     {
         static void Main(string[] args)
         {
-            //Verbatim String Literal @
-            
+            //
 
-                Console.ReadLine();
+
         }
     }
 }
