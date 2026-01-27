@@ -13,10 +13,7 @@ namespace FirstExercises
     {
         static void Main(string[] args)
         {
-            //Arrays
-
-
-
+            //
 
             Console.ReadLine();
 

@@ -590,7 +590,44 @@
     }
 
 
-### 
+### Arrays
+    int num1 = 5;
+    int num2 = 10;
+    int num3 = 15;
+
+    /*
+    Console.Write("Enter a number: ");
+    numbers[0] = Convert.ToInt32(Console.ReadLine());
+            
+    Console.Write("Enter a number: ");
+    numbers[1] = Convert.ToInt32(Console.ReadLine());
+            
+    Console.Write("Enter a number: ");
+    numbers[2] = Convert.ToInt32(Console.ReadLine());
+            
+    Console.Write("Enter a number: ");
+    numbers[3] = Convert.ToInt32(Console.ReadLine());
+    */
+
+    int[] numbers = new int[4];
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write("Enter a number: ");
+        numbers[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write($"{numbers[i]} ");
+    }
+
+    Console.WriteLine();
+
+    foreach (int num in numbers)
+    {
+        Console.Write($"{num} ");
+    }
 
 
 ### 
