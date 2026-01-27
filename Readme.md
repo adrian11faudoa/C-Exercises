@@ -444,15 +444,54 @@
     }
 
 
-### 
+### String Equals Function
+    string message = "Hello";
+    string compare = "Hello";
 
+    if (message.Equals(compare))//message == compare
+    {
+        Console.WriteLine("Same");
+    }
+    else
+    {
+        Console.WriteLine("Diff");
+    }
+
+
+    Console.WriteLine("Enter your name: ");
+    string name = Console.ReadLine();
+
+    if (!name.Equals("")) //name != ""
+    {
+        Console.WriteLine("Your name is " + name);
+    }
+    else
+    {
+        Console.WriteLine("Invalid name input");
+    }
+
+
+    char[] chars = new char[] { 'H', 'e', 'l', 'l', 'o' };
+    object newCompare = new string(chars);
+
+    if (message.Equals(newCompare)) //is concerned only about the values rather where is in memory
+    //if do message == newCompare it will give "Different", because is comparing based in where is in memory
+        Console.WriteLine("Same");
+    else
+        Console.WriteLine("Different");
 
 
 ###
 
 
+###
+
 
 ###
 
 
+###
+
+
+###
 
