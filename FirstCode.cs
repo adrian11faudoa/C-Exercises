@@ -13,11 +13,12 @@ namespace FirstExercises
     {
         static void Main(string[] args)
         {
-            //Exercise: Print String in Reverse
+            //Arrays
 
 
 
-                Console.ReadLine();
+
+            Console.ReadLine();
 
         }
     }

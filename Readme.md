@@ -534,6 +534,158 @@
     }
 
 
+### Exercise: Print String in Reverse
+    Console.Write("Enter your message: ");
+    string message = Console.ReadLine();
+
+    for (int i = 0; i < message.Length; i++)
+    {
+        Console.Write(message[i]);
+    }
+
+    Console.WriteLine();
+
+    for (int i = message.Length - 1; i >= 0; i--) //Reverse
+    {
+        Console.Write(message[i]);
+    }
+
+
+### Excersise: Password Checker
+    Console.Write("Enter password: ");
+    string password = Console.ReadLine();
+            
+    Console.Write("Enter password again: ");
+    string passwordC = Console.ReadLine();
+
+    if (!password.Equals(string.Empty))
+    {
+        if (!passwordC.Equals(string.Empty))
+        {
+            if (password.Length >= 6 && passwordC.Length >= 6)
+            {
+                if (password.Equals(passwordC))
+                {
+                    Console.WriteLine("Passwords match");
+                }
+                else
+                {
+                    Console.WriteLine("Passwords do not match");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter 6 or more characters!");
+            }
+                    
+        }
+        else
+        {
+            Console.WriteLine("Please enter a password confirmation");
+        }
+                
+    } else
+    {
+        Console.WriteLine("Please enter a password");
+    }
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
+### 
+
+
 ### 
 
 
