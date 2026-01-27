@@ -406,5 +406,53 @@
     Console.WriteLine("Your name is {0}, and your age is {1}", name, age); //Composite Formatting
 
 
+### String Interpolation ($)
+    string name = "Aba";
+    int age = 23;
+
+    Console.WriteLine("Your name is " + name + ", and your age is " + age);
+    Console.WriteLine($"Your name is {name}, and your age is {age}"); //String Interpolation
+
+
+###  String Concatenation
+    string name = "Aba";
+    int age = 23;
+
+    Console.WriteLine("Your name is " + name + ", and your age is " + age);
+    Console.WriteLine($"Your name is {name}, and your age is {age}"); //String Interpolation
+    Console.WriteLine("Your name is {0}, and your age is {1}", name, age); //Composite Formatting
+
+    string test = string.Concat("Your name is ", name, " and your age is ", age); 
+    Console.WriteLine(string.Concat("Your name is ", name, " and your age is ", age)); //String Concatenation
+
+    string[] names = new string[] { "Aba ", "Test ", "Test" };
+    Console.WriteLine(string.Concat(names));
+
+
+### Empty String
+    Console.Write("Enter your name: ");
+    string name = Console.ReadLine();
+    //name = "";
+    //name = string.Empty;
+
+    if (name != string.Empty) //Is more maintainable and readable than ""
+    {
+        Console.WriteLine($"Your name is {name}");
+    } else
+    {
+        Console.WriteLine("Name is empty");
+    }
+
+
 ### 
+
+
+
+###
+
+
+
+###
+
+
 
