@@ -285,5 +285,87 @@
     Console.WriteLine(result);
 
 
+### Numeric Formatting
+    double value = 1000D / 12.34D;
+
+    Console.WriteLine(value);
+    Console.WriteLine(string.Format("{0} {1}", value, 1000)); //Result: (value) 1000
+
+    Console.WriteLine(string.Format("{0:0}", value)); //Result: (value) ; with the format 0.00
+    Console.WriteLine(string.Format("{0:0.0}", value)); //Result: (value).0 ; with the format 0.00 with trailing 0
+    Console.WriteLine(string.Format("{0:0.#}", value)); //Result: (value). ; with the format 0.0 with no trailing 0
+    Console.WriteLine(string.Format("{0:0.00}", value)); //Result: (value).00 ; with the format 0.00
+
+    double money = -10D / 3D; //3.3333
+
+    Console.WriteLine(string.Format("-$10 / $3 = ${0:0.00}", money));
+    Console.WriteLine(money.ToString("C")); //'C' is to display currency 
+    Console.WriteLine(money.ToString("C0")); //'C0' is to display currency with no decimals 
+    Console.WriteLine(money.ToString("C1")); //'C1' is to display currency with 1 decimals 
+    Console.WriteLine(money.ToString("C2")); //'C2' is to display currency with 2 decimals 
+
+    Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+    Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+    Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-AU")));
 
 
+### TryParse Function
+    bool success = true;
+    //bool success = int.TryParse(numInput, out int num)
+
+    while (success)
+    {
+        Console.Write("Enter a number: ");
+        string numInput = Console.ReadLine();
+
+        if (int.TryParse(numInput, out int num))
+        {
+            Console.WriteLine(num);
+            success = false;
+        }
+        else
+        {
+            Console.WriteLine("Failed to Convert!");
+        }
+    }
+
+
+### Exercise: Times Table
+    Console.Write("Enter a number: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+
+    for (int i = 1; i <= 10; i++)
+    {
+        Console.WriteLine("{0} x {1} = {2}", i, num, i*num); //Conditional Format
+    }
+
+
+### Fizz Buzz Game
+    bool threeDiv = false;
+    bool fiveDiv = false;
+
+    for (int i = 1; i <= 15; i++)
+    {
+        threeDiv = i % 3 == 0;
+        fiveDiv = i % 5 == 0;
+
+        if (threeDiv && fiveDiv)
+        {
+            Console.WriteLine("FizzBuzz");
+        }
+        else if (threeDiv)
+        {
+            Console.WriteLine("Fizz");
+        }
+        else if (fiveDiv)
+        {
+            Console.WriteLine("Buzz");
+        }
+        else
+        {
+            Console.WriteLine(i);
+        }
+    }
+
+
+### 
