@@ -13,8 +13,7 @@ namespace FirstExercises
     {
         static void Main(string[] args)
         {
-            //Array IndexOf
-
+            //Lists <>
 
 
             Console.ReadLine();

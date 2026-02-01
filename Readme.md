@@ -742,7 +742,45 @@
     }
 
 
-### 
+### Array IndexOf
+    int[] numbers = new int[]
+    {
+        90, 199, 22, 50, 30
+    };//0  1    2   3   4    5
+
+    Console.Write("Enter number to search: ");
+
+    int search = Convert.ToInt32(Console.ReadLine());
+
+
+    //Option 1
+    //int position = Array.IndexOf(numbers, search);
+
+    //Option 2
+    /*int position = -1;
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] == search)
+        {
+            position = i;
+        }
+    }
+    */
+
+    //int position = Array.IndexOf(numbers, search); Would go thourgh the entire array
+    //int position = Array.IndexOf(numbers, search, 2); Would go from position 2 to the end
+    int position = Array.IndexOf(numbers, search, 2, 1); //Would go through the arrey from position 2 and check 1 element
+
+    //Check is number found
+    if (position > -1) //or >=0
+    {
+        Console.WriteLine($"Number {search} has been found at position {position + 1}");
+    }
+    else
+    {
+        Console.WriteLine($"Number {search} has not been found");
+    }
 
 
 ### 
