@@ -664,13 +664,82 @@
 
     Console.WriteLine(angleSum == 180 ? "Valid": "Invalid");
 
-### 
+### Array Sorting
+    int[] numbers = new int[]
+    {
+        9, 2, 3, 1, 5, 0, 7, 8, 9
+    };
+
+    Array.Sort(numbers); //Return void (nothing) but changes the original array order
+
+    foreach (int number in numbers)
+    {
+        Console.Write($"{number} ");
+    } 
 
 
-### 
+### Array Reversal
+    int[] numbers = new int[]
+    {
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    };
+
+    int[] sorted = new int[numbers.Length];
+
+    int x = 0;
+
+    for (int i = numbers.Length - 1; i >= 0; i--)
+    {
+        sorted[x] = numbers[i];
+        x++;
+    }
+
+    foreach (var num in sorted)
+    {
+        Console.Write($"{num} ");
+    }
+    /*
+    Array.Reverse(numbers);
+
+    foreach (var item in numbers)
+    {
+        Console.Write($"{item} ");
+    }
+    */
 
 
-### 
+### Array Clearing
+    int[] numbers = new int[]
+    { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    int[] num = new int[]
+    { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    //Option 1
+    Array.Clear(numbers, 0, numbers.Length);
+    //Option 2
+    for (int i = numbers.Length - 1; i >= 0; i--)
+    {
+        numbers[i] = default;
+    }
+
+    //Option 1
+    Array.Clear(num, 5, 5);
+    //Option 2
+    for (int i = 5; i < 10; i++) //5 6 7 8 9 
+    {
+        num[i] = default;
+
+    }
+
+    foreach (var item in numbers)
+    {
+        Console.Write($"{item} ");
+    }
+    foreach (var item in num)
+    {
+        Console.Write($"{item} ");
+    }
 
 
 ### 
