@@ -746,12 +746,11 @@
     int[] numbers = new int[]
     {
         90, 199, 22, 50, 30
-    };//0  1    2   3   4    5
+    };
 
     Console.Write("Enter number to search: ");
 
     int search = Convert.ToInt32(Console.ReadLine());
-
 
     //Option 1
     //int position = Array.IndexOf(numbers, search);
@@ -772,7 +771,7 @@
     //int position = Array.IndexOf(numbers, search, 2); Would go from position 2 to the end
     int position = Array.IndexOf(numbers, search, 2, 1); //Would go through the arrey from position 2 and check 1 element
 
-    //Check is number found
+    //Check if number found
     if (position > -1) //or >=0
     {
         Console.WriteLine($"Number {search} has been found at position {position + 1}");
