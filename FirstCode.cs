@@ -17,7 +17,6 @@ namespace FirstExercises
 
 
 
-
             Console.ReadLine();
 
         }
